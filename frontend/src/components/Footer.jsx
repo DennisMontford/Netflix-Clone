@@ -9,11 +9,11 @@ const Footer = () => {
             target="_blank"
             className="font-medium underline underline-offset-4"
           >
-            Dennis Montford 
+            Dennis Montford
           </a>
           . The source code is available on{" "}
           <a
-            href="https://github.com/DennisMontford"
+            href="https://github.com/DennisMontford/Netflix-Clone"
             target="_blank"
             rel="noreferrer"
             className="font-medium underline underline-offset-4"
