@@ -1,5 +1,6 @@
 import { fetchFromTMDB } from "../services/tmdb.service.js";
 
+// Fetches a trending movie and returns a random selection
 export async function getTrendingMovie(req, res) {
   try {
     const data = await fetchFromTMDB(
@@ -14,6 +15,7 @@ export async function getTrendingMovie(req, res) {
   }
 }
 
+// Fetches trailers for a specific movie using its ID
 export async function getMovieTrailers(req, res) {
   const { id } = req.params;
   try {
@@ -30,6 +32,7 @@ export async function getMovieTrailers(req, res) {
   }
 }
 
+// Fetches detailed information for a specific movie using its ID
 export async function getMovieDetails(req, res) {
   const { id } = req.params;
   try {
@@ -46,6 +49,7 @@ export async function getMovieDetails(req, res) {
   }
 }
 
+// Fetches movies similar to a given movie ID
 export async function getSimilarMovies(req, res) {
   const { id } = req.params;
   try {
@@ -58,6 +62,7 @@ export async function getSimilarMovies(req, res) {
   }
 }
 
+// Fetches movies by a given category (e.g., popular, top-rated, upcoming)
 export async function getMoviesByCategory(req, res) {
   const { category } = req.params;
   try {
